@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDesigners" targetNamespace="http://tempuri.org/DSDesigners.xsd" xmlns:mstns="http://tempuri.org/DSDesigners.xsd" xmlns="http://tempuri.org/DSDesigners.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PATAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PATAConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DesignMetrics.My.MySettings.GlobalReference.Default.PATAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmployeesTableAdapter" GeneratorDataComponentClassName="EmployeesTableAdapter" Name="Employees" UserDataComponentName="EmployeesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.Employees" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Employees] WHERE (([EmpID] = @Original_EmpID) AND ([EmpFirst] = @Original_EmpFirst) AND ([EmpLast] = @Original_EmpLast) AND ([EmpWareID] = @Original_EmpWareID) AND ([EmpTypeID] = @Original_EmpTypeID) AND ([EmpLogin] = @Original_EmpLogin) AND ((@IsNull_EmpNotifyProj = 1 AND [EmpNotifyProj] IS NULL) OR ([EmpNotifyProj] = @Original_EmpNotifyProj)) AND ((@IsNull_EmpNotifyTaskComp = 1 AND [EmpNotifyTaskComp] IS NULL) OR ([EmpNotifyTaskComp] = @Original_EmpNotifyTaskComp)) AND ((@IsNull_EmpNotifyTaskAssn = 1 AND [EmpNotifyTaskAssn] IS NULL) OR ([EmpNotifyTaskAssn] = @Original_EmpNotifyTaskAssn)) AND ((@IsNull_EmpUnitCapacity = 1 AND [EmpUnitCapacity] IS NULL) OR ([EmpUnitCapacity] = @Original_EmpUnitCapacity)) AND ((@IsNull_EmpTextEmail = 1 AND [EmpTextEmail] IS NULL) OR ([EmpTextEmail] = @Original_EmpTextEmail)) AND ((@IsNull_EmpEmail = 1 AND [EmpEmail] IS NULL) OR ([EmpEmail] = @Original_EmpEmail)) AND ((@IsNull_EmpNotifyShopReady = 1 AND [EmpNotifyShopReady] IS NULL) OR ([EmpNotifyShopReady] = @Original_EmpNotifyShopReady)) AND ((@IsNull_SalesPartnerID = 1 AND [SalesPartnerID] IS NULL) OR ([SalesPartnerID] = @Original_SalesPartnerID)) AND ((@IsNull_EmpNotifyProjRequest = 1 AND [EmpNotifyProjRequest] IS NULL) OR ([EmpNotifyProjRequest] = @Original_EmpNotifyProjRequest)) AND ((@IsNull_EmpNotifyAudit = 1 AND [EmpNotifyAudit] IS NULL) OR ([EmpNotifyAudit] = @Original_EmpNotifyAudit)) AND ((@IsNull_EmpNotifyEnOCreate = 1 AND [EmpNotifyEnOCreate] IS NULL) OR ([EmpNotifyEnOCreate] = @Original_EmpNotifyEnOCreate)) AND ((@IsNull_EmpNotifyEstComp = 1 AND [EmpNotifyEstComp] IS NULL) OR ([EmpNotifyEstComp] = @Original_EmpNotifyEstComp)) AND ((@IsNull_EmpHourlyRate = 1 AND [EmpHourlyRate] IS NULL) OR ([EmpHourlyRate] = @Original_EmpHourlyRate)) AND ((@IsNull_EmpTimeClockID = 1 AND [EmpTimeClockID] IS NULL) OR ([EmpTimeClockID] = @Original_EmpTimeClockID)) AND ((@IsNull_EmpBistrackID = 1 AND [EmpBistrackID] IS NULL) OR ([EmpBistrackID] = @Original_EmpBistrackID)) AND ((@IsNull_EmpBistrackSalesID = 1 AND [EmpBistrackSalesID] IS NULL) OR ([EmpBistrackSalesID] = @Original_EmpBistrackSalesID)) AND ((@IsNull_EmpWorkLocation = 1 AND [EmpWorkLocation] IS NULL) OR ([EmpWorkLocation] = @Original_EmpWorkLocation)) AND ((@IsNull_EmpHomeAddress = 1 AND [EmpHomeAddress] IS NULL) OR ([EmpHomeAddress] = @Original_EmpHomeAddress)) AND ((@IsNull_EmpStartDate = 1 AND [EmpStartDate] IS NULL) OR ([EmpStartDate] = @Original_EmpStartDate)) AND ((@IsNull_EmpJobTitle = 1 AND [EmpJobTitle] IS NULL) OR ([EmpJobTitle] = @Original_EmpJobTitle)) AND ((@IsNull_EmpEndDate = 1 AND [EmpEndDate] IS NULL) OR ([EmpEndDate] = @Original_EmpEndDate)) AND ([EmpFullName] = @Original_EmpFullName) AND ((@IsNull_EmpTeamID = 1 AND [EmpTeamID] IS NULL) OR ([EmpTeamID] = @Original_EmpTeamID)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpFirst" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpFirst" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpLast" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLast" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpWareID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWareID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpLogin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLogin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyProj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyProj" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyProj" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProj" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyTaskComp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyTaskComp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyTaskComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskComp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyTaskAssn" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyTaskAssn" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyTaskAssn" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskAssn" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpUnitCapacity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpUnitCapacity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpUnitCapacity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpUnitCapacity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTextEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTextEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpTextEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTextEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyShopReady" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyShopReady" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyShopReady" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyShopReady" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SalesPartnerID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SalesPartnerID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SalesPartnerID" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SalesPartnerID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyProjRequest" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyProjRequest" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyProjRequest" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProjRequest" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyAudit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyAudit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyAudit" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyAudit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyEnOCreate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyEnOCreate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyEnOCreate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEnOCreate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyEstComp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyEstComp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyEstComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEstComp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpHourlyRate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpHourlyRate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_EmpHourlyRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpHourlyRate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTimeClockID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTimeClockID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTimeClockID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTimeClockID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpBistrackID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpBistrackID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpBistrackSalesID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackSalesID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpBistrackSalesID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackSalesID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpWorkLocation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWorkLocation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpWorkLocation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWorkLocation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpHomeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpHomeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpHomeAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpHomeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpStartDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpStartDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_EmpStartDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpStartDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpEndDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpEndDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_EmpEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpEndDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpFullName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpFullName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTeamID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTeamID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Employees] ([EmpFirst], [EmpLast], [EmpWareID], [EmpTypeID], [EmpLogin], [EmpNotifyProj], [EmpNotifyTaskComp], [EmpNotifyTaskAssn], [EmpUnitCapacity], [EmpTextEmail], [EmpEmail], [EmpNotifyShopReady], [SalesPartnerID], [EmpNotifyProjRequest], [EmpNotifyAudit], [EmpNotifyEnOCreate], [EmpNotifyEstComp], [EmpHourlyRate], [EmpTimeClockID], [EmpBistrackID], [EmpBistrackSalesID], [EmpWorkLocation], [EmpHomeAddress], [EmpStartDate], [EmpJobTitle], [EmpEndDate], [EmpTeamID]) VALUES (@EmpFirst, @EmpLast, @EmpWareID, @EmpTypeID, @EmpLogin, @EmpNotifyProj, @EmpNotifyTaskComp, @EmpNotifyTaskAssn, @EmpUnitCapacity, @EmpTextEmail, @EmpEmail, @EmpNotifyShopReady, @SalesPartnerID, @EmpNotifyProjRequest, @EmpNotifyAudit, @EmpNotifyEnOCreate, @EmpNotifyEstComp, @EmpHourlyRate, @EmpTimeClockID, @EmpBistrackID, @EmpBistrackSalesID, @EmpWorkLocation, @EmpHomeAddress, @EmpStartDate, @EmpJobTitle, @EmpEndDate, @EmpTeamID);
+SELECT EmpID, EmpFirst, EmpLast, EmpWareID, EmpTypeID, EmpLogin, EmpNotifyProj, EmpNotifyTaskComp, EmpNotifyTaskAssn, EmpUnitCapacity, EmpTextEmail, EmpEmail, EmpNotifyShopReady, SalesPartnerID, EmpNotifyProjRequest, EmpNotifyAudit, EmpNotifyEnOCreate, EmpNotifyEstComp, EmpHourlyRate, EmpTimeClockID, EmpBistrackID, EmpBistrackSalesID, EmpWorkLocation, EmpHomeAddress, EmpStartDate, EmpJobTitle, EmpEndDate, EmpFullName, EmpTeamID FROM Employees WHERE (EmpID = SCOPE_IDENTITY()) ORDER BY EmpFirst, EmpLast</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpFirst" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpFirst" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpLast" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLast" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpWareID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWareID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpLogin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLogin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyProj" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProj" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyTaskComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskComp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyTaskAssn" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskAssn" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpUnitCapacity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpUnitCapacity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpTextEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTextEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyShopReady" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyShopReady" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SalesPartnerID" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SalesPartnerID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyProjRequest" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProjRequest" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyAudit" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyAudit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyEnOCreate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEnOCreate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyEstComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEstComp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@EmpHourlyRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpHourlyRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTimeClockID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTimeClockID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpBistrackID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpBistrackSalesID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackSalesID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpWorkLocation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWorkLocation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpHomeAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpHomeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@EmpStartDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpStartDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@EmpEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpEndDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTeamID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Employees.*
+FROM            Employees
+WHERE        (EmpTypeID IN (2, 3))
+order by empfirst, emplast</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Employees] SET [EmpFirst] = @EmpFirst, [EmpLast] = @EmpLast, [EmpWareID] = @EmpWareID, [EmpTypeID] = @EmpTypeID, [EmpLogin] = @EmpLogin, [EmpNotifyProj] = @EmpNotifyProj, [EmpNotifyTaskComp] = @EmpNotifyTaskComp, [EmpNotifyTaskAssn] = @EmpNotifyTaskAssn, [EmpUnitCapacity] = @EmpUnitCapacity, [EmpTextEmail] = @EmpTextEmail, [EmpEmail] = @EmpEmail, [EmpNotifyShopReady] = @EmpNotifyShopReady, [SalesPartnerID] = @SalesPartnerID, [EmpNotifyProjRequest] = @EmpNotifyProjRequest, [EmpNotifyAudit] = @EmpNotifyAudit, [EmpNotifyEnOCreate] = @EmpNotifyEnOCreate, [EmpNotifyEstComp] = @EmpNotifyEstComp, [EmpHourlyRate] = @EmpHourlyRate, [EmpTimeClockID] = @EmpTimeClockID, [EmpBistrackID] = @EmpBistrackID, [EmpBistrackSalesID] = @EmpBistrackSalesID, [EmpWorkLocation] = @EmpWorkLocation, [EmpHomeAddress] = @EmpHomeAddress, [EmpStartDate] = @EmpStartDate, [EmpJobTitle] = @EmpJobTitle, [EmpEndDate] = @EmpEndDate, [EmpTeamID] = @EmpTeamID WHERE (([EmpID] = @Original_EmpID) AND ([EmpFirst] = @Original_EmpFirst) AND ([EmpLast] = @Original_EmpLast) AND ([EmpWareID] = @Original_EmpWareID) AND ([EmpTypeID] = @Original_EmpTypeID) AND ([EmpLogin] = @Original_EmpLogin) AND ((@IsNull_EmpNotifyProj = 1 AND [EmpNotifyProj] IS NULL) OR ([EmpNotifyProj] = @Original_EmpNotifyProj)) AND ((@IsNull_EmpNotifyTaskComp = 1 AND [EmpNotifyTaskComp] IS NULL) OR ([EmpNotifyTaskComp] = @Original_EmpNotifyTaskComp)) AND ((@IsNull_EmpNotifyTaskAssn = 1 AND [EmpNotifyTaskAssn] IS NULL) OR ([EmpNotifyTaskAssn] = @Original_EmpNotifyTaskAssn)) AND ((@IsNull_EmpUnitCapacity = 1 AND [EmpUnitCapacity] IS NULL) OR ([EmpUnitCapacity] = @Original_EmpUnitCapacity)) AND ((@IsNull_EmpTextEmail = 1 AND [EmpTextEmail] IS NULL) OR ([EmpTextEmail] = @Original_EmpTextEmail)) AND ((@IsNull_EmpEmail = 1 AND [EmpEmail] IS NULL) OR ([EmpEmail] = @Original_EmpEmail)) AND ((@IsNull_EmpNotifyShopReady = 1 AND [EmpNotifyShopReady] IS NULL) OR ([EmpNotifyShopReady] = @Original_EmpNotifyShopReady)) AND ((@IsNull_SalesPartnerID = 1 AND [SalesPartnerID] IS NULL) OR ([SalesPartnerID] = @Original_SalesPartnerID)) AND ((@IsNull_EmpNotifyProjRequest = 1 AND [EmpNotifyProjRequest] IS NULL) OR ([EmpNotifyProjRequest] = @Original_EmpNotifyProjRequest)) AND ((@IsNull_EmpNotifyAudit = 1 AND [EmpNotifyAudit] IS NULL) OR ([EmpNotifyAudit] = @Original_EmpNotifyAudit)) AND ((@IsNull_EmpNotifyEnOCreate = 1 AND [EmpNotifyEnOCreate] IS NULL) OR ([EmpNotifyEnOCreate] = @Original_EmpNotifyEnOCreate)) AND ((@IsNull_EmpNotifyEstComp = 1 AND [EmpNotifyEstComp] IS NULL) OR ([EmpNotifyEstComp] = @Original_EmpNotifyEstComp)) AND ((@IsNull_EmpHourlyRate = 1 AND [EmpHourlyRate] IS NULL) OR ([EmpHourlyRate] = @Original_EmpHourlyRate)) AND ((@IsNull_EmpTimeClockID = 1 AND [EmpTimeClockID] IS NULL) OR ([EmpTimeClockID] = @Original_EmpTimeClockID)) AND ((@IsNull_EmpBistrackID = 1 AND [EmpBistrackID] IS NULL) OR ([EmpBistrackID] = @Original_EmpBistrackID)) AND ((@IsNull_EmpBistrackSalesID = 1 AND [EmpBistrackSalesID] IS NULL) OR ([EmpBistrackSalesID] = @Original_EmpBistrackSalesID)) AND ((@IsNull_EmpWorkLocation = 1 AND [EmpWorkLocation] IS NULL) OR ([EmpWorkLocation] = @Original_EmpWorkLocation)) AND ((@IsNull_EmpHomeAddress = 1 AND [EmpHomeAddress] IS NULL) OR ([EmpHomeAddress] = @Original_EmpHomeAddress)) AND ((@IsNull_EmpStartDate = 1 AND [EmpStartDate] IS NULL) OR ([EmpStartDate] = @Original_EmpStartDate)) AND ((@IsNull_EmpJobTitle = 1 AND [EmpJobTitle] IS NULL) OR ([EmpJobTitle] = @Original_EmpJobTitle)) AND ((@IsNull_EmpEndDate = 1 AND [EmpEndDate] IS NULL) OR ([EmpEndDate] = @Original_EmpEndDate)) AND ([EmpFullName] = @Original_EmpFullName) AND ((@IsNull_EmpTeamID = 1 AND [EmpTeamID] IS NULL) OR ([EmpTeamID] = @Original_EmpTeamID)));
+SELECT EmpID, EmpFirst, EmpLast, EmpWareID, EmpTypeID, EmpLogin, EmpNotifyProj, EmpNotifyTaskComp, EmpNotifyTaskAssn, EmpUnitCapacity, EmpTextEmail, EmpEmail, EmpNotifyShopReady, SalesPartnerID, EmpNotifyProjRequest, EmpNotifyAudit, EmpNotifyEnOCreate, EmpNotifyEstComp, EmpHourlyRate, EmpTimeClockID, EmpBistrackID, EmpBistrackSalesID, EmpWorkLocation, EmpHomeAddress, EmpStartDate, EmpJobTitle, EmpEndDate, EmpFullName, EmpTeamID FROM Employees WHERE (EmpID = @EmpID) ORDER BY EmpFirst, EmpLast</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpFirst" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpFirst" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpLast" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLast" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpWareID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWareID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpLogin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLogin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyProj" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProj" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyTaskComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskComp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyTaskAssn" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskAssn" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpUnitCapacity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpUnitCapacity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpTextEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTextEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyShopReady" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyShopReady" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SalesPartnerID" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SalesPartnerID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyProjRequest" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProjRequest" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyAudit" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyAudit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyEnOCreate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEnOCreate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@EmpNotifyEstComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEstComp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@EmpHourlyRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpHourlyRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTimeClockID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTimeClockID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpBistrackID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpBistrackSalesID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackSalesID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpWorkLocation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWorkLocation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpHomeAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpHomeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@EmpStartDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpStartDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@EmpEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpEndDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTeamID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpFirst" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpFirst" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpLast" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLast" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpWareID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWareID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpLogin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpLogin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyProj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyProj" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyProj" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProj" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyTaskComp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyTaskComp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyTaskComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskComp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyTaskAssn" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyTaskAssn" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyTaskAssn" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyTaskAssn" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpUnitCapacity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpUnitCapacity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpUnitCapacity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpUnitCapacity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTextEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTextEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpTextEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTextEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyShopReady" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyShopReady" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyShopReady" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyShopReady" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SalesPartnerID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SalesPartnerID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SalesPartnerID" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SalesPartnerID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyProjRequest" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyProjRequest" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyProjRequest" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyProjRequest" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyAudit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyAudit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyAudit" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyAudit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyEnOCreate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyEnOCreate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyEnOCreate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEnOCreate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpNotifyEstComp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpNotifyEstComp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_EmpNotifyEstComp" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="EmpNotifyEstComp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpHourlyRate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpHourlyRate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_EmpHourlyRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpHourlyRate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTimeClockID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTimeClockID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTimeClockID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTimeClockID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpBistrackID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpBistrackID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpBistrackSalesID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackSalesID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpBistrackSalesID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpBistrackSalesID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpWorkLocation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWorkLocation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpWorkLocation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpWorkLocation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpHomeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpHomeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpHomeAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpHomeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpStartDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpStartDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_EmpStartDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpStartDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpEndDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpEndDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_EmpEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EmpEndDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpFullName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpFullName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTeamID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTeamID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EmpID" ColumnName="EmpID" DataSourceName="PATA.dbo.Employees" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EmpID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmpID" DataSetColumn="EmpID" />
+              <Mapping SourceColumn="EmpFirst" DataSetColumn="EmpFirst" />
+              <Mapping SourceColumn="EmpLast" DataSetColumn="EmpLast" />
+              <Mapping SourceColumn="EmpWareID" DataSetColumn="EmpWareID" />
+              <Mapping SourceColumn="EmpTypeID" DataSetColumn="EmpTypeID" />
+              <Mapping SourceColumn="EmpLogin" DataSetColumn="EmpLogin" />
+              <Mapping SourceColumn="EmpNotifyProj" DataSetColumn="EmpNotifyProj" />
+              <Mapping SourceColumn="EmpNotifyTaskComp" DataSetColumn="EmpNotifyTaskComp" />
+              <Mapping SourceColumn="EmpNotifyTaskAssn" DataSetColumn="EmpNotifyTaskAssn" />
+              <Mapping SourceColumn="EmpUnitCapacity" DataSetColumn="EmpUnitCapacity" />
+              <Mapping SourceColumn="EmpTextEmail" DataSetColumn="EmpTextEmail" />
+              <Mapping SourceColumn="EmpEmail" DataSetColumn="EmpEmail" />
+              <Mapping SourceColumn="EmpNotifyShopReady" DataSetColumn="EmpNotifyShopReady" />
+              <Mapping SourceColumn="SalesPartnerID" DataSetColumn="SalesPartnerID" />
+              <Mapping SourceColumn="EmpNotifyProjRequest" DataSetColumn="EmpNotifyProjRequest" />
+              <Mapping SourceColumn="EmpNotifyAudit" DataSetColumn="EmpNotifyAudit" />
+              <Mapping SourceColumn="EmpNotifyEnOCreate" DataSetColumn="EmpNotifyEnOCreate" />
+              <Mapping SourceColumn="EmpNotifyEstComp" DataSetColumn="EmpNotifyEstComp" />
+              <Mapping SourceColumn="EmpHourlyRate" DataSetColumn="EmpHourlyRate" />
+              <Mapping SourceColumn="EmpTimeClockID" DataSetColumn="EmpTimeClockID" />
+              <Mapping SourceColumn="EmpBistrackID" DataSetColumn="EmpBistrackID" />
+              <Mapping SourceColumn="EmpBistrackSalesID" DataSetColumn="EmpBistrackSalesID" />
+              <Mapping SourceColumn="EmpWorkLocation" DataSetColumn="EmpWorkLocation" />
+              <Mapping SourceColumn="EmpHomeAddress" DataSetColumn="EmpHomeAddress" />
+              <Mapping SourceColumn="EmpStartDate" DataSetColumn="EmpStartDate" />
+              <Mapping SourceColumn="EmpJobTitle" DataSetColumn="EmpJobTitle" />
+              <Mapping SourceColumn="EmpEndDate" DataSetColumn="EmpEndDate" />
+              <Mapping SourceColumn="EmpFullName" DataSetColumn="EmpFullName" />
+              <Mapping SourceColumn="EmpTeamID" DataSetColumn="EmpTeamID" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.Employees" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        EmpBistrackID, EmpBistrackSalesID, EmpEmail, EmpEndDate, EmpFirst, EmpFullName, EmpHomeAddress, EmpHourlyRate, EmpID, EmpJobTitle, EmpLast, EmpLogin, EmpNotifyAudit, EmpNotifyEnOCreate, EmpNotifyEstComp,
+                          EmpNotifyProj, EmpNotifyProjRequest, EmpNotifyShopReady, EmpNotifyTaskAssn, EmpNotifyTaskComp, EmpStartDate, EmpTeamID, EmpTextEmail, EmpTimeClockID, EmpTypeID, EmpUnitCapacity, EmpWareID, 
+                         EmpWorkLocation, SalesPartnerID
+FROM            Employees
+WHERE        (EmpTypeID IN (2, 3)) AND (EmpID = @empid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="empid" ColumnName="EmpID" DataSourceName="PATA.dbo.Employees" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@empid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpRatesTableAdapter" GeneratorDataComponentClassName="EmpRatesTableAdapter" Name="EmpRates" UserDataComponentName="EmpRatesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.EmpRates" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [EmpRates] WHERE (([EmpPayRateid] = @Original_EmpPayRateid) AND ((@IsNull_EmpID = 1 AND [EmpID] IS NULL) OR ([EmpID] = @Original_EmpID)) AND ((@IsNull_EmpPayRate = 1 AND [EmpPayRate] IS NULL) OR ([EmpPayRate] = @Original_EmpPayRate)) AND ((@IsNull_Effectivedate = 1 AND [Effectivedate] IS NULL) OR ([Effectivedate] = @Original_Effectivedate)) AND ((@IsNull_EffectiveEndDate = 1 AND [EffectiveEndDate] IS NULL) OR ([EffectiveEndDate] = @Original_EffectiveEndDate)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpPayRateid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpPayRateid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpPayRate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpPayRate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_EmpPayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpPayRate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Effectivedate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Effectivedate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Effectivedate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Effectivedate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EffectiveEndDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EffectiveEndDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_EffectiveEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EffectiveEndDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [EmpRates] ([EmpID], [EmpPayRate], [Effectivedate], [EffectiveEndDate]) VALUES (@EmpID, @EmpPayRate, @Effectivedate, @EffectiveEndDate);
+SELECT EmpPayRateid, EmpID, EmpPayRate, Effectivedate, EffectiveEndDate FROM EmpRates WHERE (EmpPayRateid = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@EmpPayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpPayRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Effectivedate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Effectivedate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@EffectiveEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EffectiveEndDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        EmpRates.*
+FROM            EmpRates</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [EmpRates] SET [EmpID] = @EmpID, [EmpPayRate] = @EmpPayRate, [Effectivedate] = @Effectivedate, [EffectiveEndDate] = @EffectiveEndDate WHERE (([EmpPayRateid] = @Original_EmpPayRateid) AND ((@IsNull_EmpID = 1 AND [EmpID] IS NULL) OR ([EmpID] = @Original_EmpID)) AND ((@IsNull_EmpPayRate = 1 AND [EmpPayRate] IS NULL) OR ([EmpPayRate] = @Original_EmpPayRate)) AND ((@IsNull_Effectivedate = 1 AND [Effectivedate] IS NULL) OR ([Effectivedate] = @Original_Effectivedate)) AND ((@IsNull_EffectiveEndDate = 1 AND [EffectiveEndDate] IS NULL) OR ([EffectiveEndDate] = @Original_EffectiveEndDate)));
+SELECT EmpPayRateid, EmpID, EmpPayRate, Effectivedate, EffectiveEndDate FROM EmpRates WHERE (EmpPayRateid = @EmpPayRateid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@EmpPayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpPayRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Effectivedate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Effectivedate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@EffectiveEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EffectiveEndDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpPayRateid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpPayRateid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpPayRate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpPayRate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_EmpPayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="EmpPayRate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Effectivedate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Effectivedate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Effectivedate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Effectivedate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EffectiveEndDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EffectiveEndDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_EffectiveEndDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="EffectiveEndDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EmpPayRateid" ColumnName="EmpPayRateid" DataSourceName="PATA.dbo.EmpRates" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EmpPayRateid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmpPayRateid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmpPayRateid" DataSetColumn="EmpPayRateid" />
+              <Mapping SourceColumn="EmpID" DataSetColumn="EmpID" />
+              <Mapping SourceColumn="EmpPayRate" DataSetColumn="EmpPayRate" />
+              <Mapping SourceColumn="Effectivedate" DataSetColumn="Effectivedate" />
+              <Mapping SourceColumn="EffectiveEndDate" DataSetColumn="EffectiveEndDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DesignMetricsTableAdapter" GeneratorDataComponentClassName="DesignMetricsTableAdapter" Name="DesignMetrics" UserDataComponentName="DesignMetricsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.DesignMetrics" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [DesignMetrics] WHERE (([DesignMetricsID] = @Original_DesignMetricsID) AND ((@IsNull_EMPID = 1 AND [EMPID] IS NULL) OR ([EMPID] = @Original_EMPID)) AND ([HoursWorked] = @Original_HoursWorked) AND ((@IsNull_WeekYear = 1 AND [WeekYear] IS NULL) OR ([WeekYear] = @Original_WeekYear)) AND ([ToShopBDFT] = @Original_ToShopBDFT) AND ((@IsNull_TotalBDFT = 1 AND [TotalBDFT] IS NULL) OR ([TotalBDFT] = @Original_TotalBDFT)) AND ([EstBDFT] = @Original_EstBDFT) AND ([EWPLF] = @Original_EWPLF) AND ([LooseSQFT] = @Original_LooseSQFT) AND ([DesignEnoCost] = @Original_DesignEnoCost) AND ([DesignEnoNBR] = @Original_DesignEnoNBR) AND ((@IsNull_yearsort = 1 AND [yearsort] IS NULL) OR ([yearsort] = @Original_yearsort)) AND ((@IsNull_weeksort = 1 AND [weeksort] IS NULL) OR ([weeksort] = @Original_weeksort)) AND ((@IsNull_PayRate = 1 AND [PayRate] IS NULL) OR ([PayRate] = @Original_PayRate)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_DesignMetricsID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesignMetricsID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EMPID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMPID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EMPID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMPID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_HoursWorked" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="HoursWorked" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WeekYear" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WeekYear" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_WeekYear" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WeekYear" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ToShopBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ToShopBDFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TotalBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotalBDFT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_TotalBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotalBDFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EstBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EstBDFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EWPLF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EWPLF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_LooseSQFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LooseSQFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_DesignEnoCost" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="DesignEnoCost" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_DesignEnoNBR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesignEnoNBR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_yearsort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="yearsort" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_yearsort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="yearsort" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_weeksort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weeksort" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_weeksort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weeksort" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PayRate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PayRate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="PayRate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [DesignMetrics] ([EMPID], [HoursWorked], [WeekYear], [ToShopBDFT], [TotalBDFT], [EstBDFT], [EWPLF], [LooseSQFT], [DesignEnoCost], [DesignEnoNBR], [yearsort], [weeksort], [PayRate]) VALUES (@EMPID, @HoursWorked, @WeekYear, @ToShopBDFT, @TotalBDFT, @EstBDFT, @EWPLF, @LooseSQFT, @DesignEnoCost, @DesignEnoNBR, @yearsort, @weeksort, @PayRate);
+SELECT DesignMetricsID, EMPID, HoursWorked, WeekYear, ToShopBDFT, TotalBDFT, EstBDFT, EWPLF, LooseSQFT, DesignEnoCost, DesignEnoNBR, yearsort, weeksort, PayRate FROM DesignMetrics WHERE (DesignMetricsID = SCOPE_IDENTITY()) ORDER BY yearsort DESC, weeksort DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EMPID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMPID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@HoursWorked" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="HoursWorked" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@WeekYear" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WeekYear" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ToShopBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ToShopBDFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@TotalBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotalBDFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EstBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EstBDFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EWPLF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EWPLF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@LooseSQFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LooseSQFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@DesignEnoCost" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="DesignEnoCost" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@DesignEnoNBR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesignEnoNBR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@yearsort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="yearsort" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@weeksort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weeksort" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="PayRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DesignMetricsID, EMPID, HoursWorked, WeekYear, ToShopBDFT, TotalBDFT, EstBDFT, EWPLF, LooseSQFT, DesignEnoCost, DesignEnoNBR, yearsort, weeksort, PayRate
+FROM            DesignMetrics
+ORDER BY yearsort DESC, weeksort DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [DesignMetrics] SET [EMPID] = @EMPID, [HoursWorked] = @HoursWorked, [WeekYear] = @WeekYear, [ToShopBDFT] = @ToShopBDFT, [TotalBDFT] = @TotalBDFT, [EstBDFT] = @EstBDFT, [EWPLF] = @EWPLF, [LooseSQFT] = @LooseSQFT, [DesignEnoCost] = @DesignEnoCost, [DesignEnoNBR] = @DesignEnoNBR, [yearsort] = @yearsort, [weeksort] = @weeksort, [PayRate] = @PayRate WHERE (([DesignMetricsID] = @Original_DesignMetricsID) AND ((@IsNull_EMPID = 1 AND [EMPID] IS NULL) OR ([EMPID] = @Original_EMPID)) AND ([HoursWorked] = @Original_HoursWorked) AND ((@IsNull_WeekYear = 1 AND [WeekYear] IS NULL) OR ([WeekYear] = @Original_WeekYear)) AND ([ToShopBDFT] = @Original_ToShopBDFT) AND ((@IsNull_TotalBDFT = 1 AND [TotalBDFT] IS NULL) OR ([TotalBDFT] = @Original_TotalBDFT)) AND ([EstBDFT] = @Original_EstBDFT) AND ([EWPLF] = @Original_EWPLF) AND ([LooseSQFT] = @Original_LooseSQFT) AND ([DesignEnoCost] = @Original_DesignEnoCost) AND ([DesignEnoNBR] = @Original_DesignEnoNBR) AND ((@IsNull_yearsort = 1 AND [yearsort] IS NULL) OR ([yearsort] = @Original_yearsort)) AND ((@IsNull_weeksort = 1 AND [weeksort] IS NULL) OR ([weeksort] = @Original_weeksort)) AND ((@IsNull_PayRate = 1 AND [PayRate] IS NULL) OR ([PayRate] = @Original_PayRate)));
+SELECT DesignMetricsID, EMPID, HoursWorked, WeekYear, ToShopBDFT, TotalBDFT, EstBDFT, EWPLF, LooseSQFT, DesignEnoCost, DesignEnoNBR, yearsort, weeksort, PayRate FROM DesignMetrics WHERE (DesignMetricsID = @DesignMetricsID) ORDER BY yearsort DESC, weeksort DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EMPID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMPID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@HoursWorked" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="HoursWorked" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@WeekYear" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WeekYear" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ToShopBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ToShopBDFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@TotalBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotalBDFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EstBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EstBDFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EWPLF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EWPLF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@LooseSQFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LooseSQFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@DesignEnoCost" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="DesignEnoCost" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@DesignEnoNBR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesignEnoNBR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@yearsort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="yearsort" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@weeksort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weeksort" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="PayRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_DesignMetricsID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesignMetricsID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EMPID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMPID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EMPID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMPID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_HoursWorked" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="HoursWorked" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WeekYear" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WeekYear" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_WeekYear" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WeekYear" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ToShopBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ToShopBDFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TotalBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotalBDFT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_TotalBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotalBDFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EstBDFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EstBDFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EWPLF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EWPLF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_LooseSQFT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LooseSQFT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_DesignEnoCost" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="DesignEnoCost" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_DesignEnoNBR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesignEnoNBR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_yearsort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="yearsort" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_yearsort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="yearsort" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_weeksort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weeksort" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_weeksort" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weeksort" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PayRate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PayRate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PayRate" Precision="9" ProviderType="Decimal" Scale="3" Size="0" SourceColumn="PayRate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="DesignMetricsID" ColumnName="DesignMetricsID" DataSourceName="PATA.dbo.DesignMetrics" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DesignMetricsID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="DesignMetricsID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DesignMetricsID" DataSetColumn="DesignMetricsID" />
+              <Mapping SourceColumn="EMPID" DataSetColumn="EMPID" />
+              <Mapping SourceColumn="HoursWorked" DataSetColumn="HoursWorked" />
+              <Mapping SourceColumn="WeekYear" DataSetColumn="WeekYear" />
+              <Mapping SourceColumn="ToShopBDFT" DataSetColumn="ToShopBDFT" />
+              <Mapping SourceColumn="TotalBDFT" DataSetColumn="TotalBDFT" />
+              <Mapping SourceColumn="EstBDFT" DataSetColumn="EstBDFT" />
+              <Mapping SourceColumn="EWPLF" DataSetColumn="EWPLF" />
+              <Mapping SourceColumn="LooseSQFT" DataSetColumn="LooseSQFT" />
+              <Mapping SourceColumn="DesignEnoCost" DataSetColumn="DesignEnoCost" />
+              <Mapping SourceColumn="DesignEnoNBR" DataSetColumn="DesignEnoNBR" />
+              <Mapping SourceColumn="yearsort" DataSetColumn="yearsort" />
+              <Mapping SourceColumn="weeksort" DataSetColumn="weeksort" />
+              <Mapping SourceColumn="PayRate" DataSetColumn="PayRate" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.DesignMetrics" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DesignEnoCost, DesignEnoNBR, DesignMetricsID, EMPID, EWPLF, EstBDFT, HoursWorked, LooseSQFT, PayRate, ToShopBDFT, TotalBDFT, WeekYear, weeksort, yearsort FROM DesignMetrics WHERE (EMPID = @empid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="empid" ColumnName="EMPID" DataSourceName="PATA.dbo.DesignMetrics" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@empid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EMPID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmployeeTypeTableAdapter" GeneratorDataComponentClassName="EmployeeTypeTableAdapter" Name="EmployeeType" UserDataComponentName="EmployeeTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.EmployeeType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [EmployeeType] WHERE (([EmpTypeID] = @Original_EmpTypeID) AND ([EmpTypeName] = @Original_EmpTypeName))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpTypeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpTypeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [EmployeeType] ([EmpTypeName]) VALUES (@EmpTypeName);
+SELECT EmpTypeID, EmpTypeName FROM EmployeeType WHERE (EmpTypeID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpTypeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpTypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        EmployeeType.*
+FROM            EmployeeType</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [EmployeeType] SET [EmpTypeName] = @EmpTypeName WHERE (([EmpTypeID] = @Original_EmpTypeID) AND ([EmpTypeName] = @Original_EmpTypeName));
+SELECT EmpTypeID, EmpTypeName FROM EmployeeType WHERE (EmpTypeID = @EmpTypeID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EmpTypeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpTypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EmpTypeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EmpTypeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EmpTypeID" ColumnName="EmpTypeID" DataSourceName="PATA.dbo.EmployeeType" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EmpTypeID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmpTypeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmpTypeID" DataSetColumn="EmpTypeID" />
+              <Mapping SourceColumn="EmpTypeName" DataSetColumn="EmpTypeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WarehouseTableAdapter" GeneratorDataComponentClassName="WarehouseTableAdapter" Name="Warehouse" UserDataComponentName="WarehouseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.Warehouse" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Warehouse] WHERE (([WarehouseID] = @Original_WarehouseID) AND ([WarehouseName] = @Original_WarehouseName))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_WarehouseID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WarehouseID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_WarehouseName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WarehouseName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Warehouse] ([WarehouseName]) VALUES (@WarehouseName);
+SELECT WarehouseID, WarehouseName FROM Warehouse WHERE (WarehouseID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@WarehouseName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WarehouseName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        WarehouseID, WarehouseName
+FROM            Warehouse</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Warehouse] SET [WarehouseName] = @WarehouseName WHERE (([WarehouseID] = @Original_WarehouseID) AND ([WarehouseName] = @Original_WarehouseName));
+SELECT WarehouseID, WarehouseName FROM Warehouse WHERE (WarehouseID = @WarehouseID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@WarehouseName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WarehouseName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_WarehouseID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WarehouseID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_WarehouseName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WarehouseName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="WarehouseID" ColumnName="WarehouseID" DataSourceName="PATA.dbo.Warehouse" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@WarehouseID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="WarehouseID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="WarehouseID" DataSetColumn="WarehouseID" />
+              <Mapping SourceColumn="WarehouseName" DataSetColumn="WarehouseName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="YearlyDesignMetricsTableAdapter" GeneratorDataComponentClassName="YearlyDesignMetricsTableAdapter" Name="YearlyDesignMetrics" UserDataComponentName="YearlyDesignMetricsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.DesignMetrics" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        SUM(HoursWorked) AS TotalHours, SUM(ToShopBDFT) AS TotalToShopBDFT, SUM(TotalBDFT) AS TotalDesignBDFT, SUM(EstBDFT) AS TotalEstBDFT, SUM(EWPLF) AS TotalEWPLF, SUM(LooseSQFT) AS TotalSQFT, 
+                         SUM(DesignEnoCost) AS TotalEnOCost, SUM(DesignEnoNBR) AS TotalEnOs, yearsort, EMPID, SUM(TotalBDFT) / SUM(HoursWorked + .0001) AS TotalBDFTperDH, SUM(ToShopBDFT) / SUM(HoursWorked + .0001) 
+                         AS ToShopBDFTDH, 1 - SUM(DesignEnoCost) / SUM(ToShopBDFT + .0001) AS AccRate, SUM(EstBDFT) / SUM(HoursWorked + .0001) AS EstBDFTperDH
+FROM            DesignMetrics
+GROUP BY yearsort, EMPID
+ORDER BY yearsort DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TotalHours" DataSetColumn="TotalHours" />
+              <Mapping SourceColumn="TotalToShopBDFT" DataSetColumn="TotalToShopBDFT" />
+              <Mapping SourceColumn="TotalDesignBDFT" DataSetColumn="TotalDesignBDFT" />
+              <Mapping SourceColumn="TotalEstBDFT" DataSetColumn="TotalEstBDFT" />
+              <Mapping SourceColumn="TotalEWPLF" DataSetColumn="TotalEWPLF" />
+              <Mapping SourceColumn="TotalSQFT" DataSetColumn="TotalSQFT" />
+              <Mapping SourceColumn="TotalEnOCost" DataSetColumn="TotalEnOCost" />
+              <Mapping SourceColumn="TotalEnOs" DataSetColumn="TotalEnOs" />
+              <Mapping SourceColumn="yearsort" DataSetColumn="yearsort" />
+              <Mapping SourceColumn="EMPID" DataSetColumn="EMPID" />
+              <Mapping SourceColumn="TotalBDFTperDH" DataSetColumn="TotalBDFTperDH" />
+              <Mapping SourceColumn="ToShopBDFTDH" DataSetColumn="ToShopBDFTDH" />
+              <Mapping SourceColumn="AccRate" DataSetColumn="AccRate" />
+              <Mapping SourceColumn="EstBDFTperDH" DataSetColumn="EstBDFTperDH" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.DesignMetrics" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        SUM(HoursWorked) AS TotalHours, SUM(ToShopBDFT) AS TotalToShopBDFT, SUM(TotalBDFT) AS TotalDesignBDFT, SUM(EstBDFT) AS TotalEstBDFT, SUM(EWPLF) AS TotalEWPLF, SUM(LooseSQFT) AS TotalSQFT, 
+                         SUM(DesignEnoCost) AS TotalEnOCost, SUM(DesignEnoNBR) AS TotalEnOs,  yearsort, EMPID,
+						 sum(totalbdft)/(sum(hoursworked+.0001)) as TotalBDFTperDH, sum(toshopbdft)/(sum(hoursworked+.0001)) as ToShopBDFTDH,
+						 1-sum(designenocost)/(sum(toshopbdft+.0001)) as AccRate,
+						 sum(estbdft)/(sum(hoursworked+.0001)) as EstBDFTperDH
+FROM            DesignMetrics
+where empid=@empid
+GROUP BY yearsort, EMPID
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="empid" ColumnName="EMPID" DataSourceName="PATA.dbo.DesignMetrics" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@empid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EMPID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpWorkLocationTableAdapter" GeneratorDataComponentClassName="EmpWorkLocationTableAdapter" Name="EmpWorkLocation" UserDataComponentName="EmpWorkLocationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.EmpWorkLocation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [EmpWorkLocation] WHERE (([empworklocationid] = @Original_empworklocationid) AND ([Empworklocation] = @Original_Empworklocation))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_empworklocationid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empworklocationid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Empworklocation" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Empworklocation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [EmpWorkLocation] ([Empworklocation]) VALUES (@Empworklocation);
+SELECT empworklocationid, Empworklocation FROM EmpWorkLocation WHERE (empworklocationid = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Empworklocation" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Empworklocation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        EmpWorkLocation.*
+FROM            EmpWorkLocation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [EmpWorkLocation] SET [Empworklocation] = @Empworklocation WHERE (([empworklocationid] = @Original_empworklocationid) AND ([Empworklocation] = @Original_Empworklocation));
+SELECT empworklocationid, Empworklocation FROM EmpWorkLocation WHERE (empworklocationid = @empworklocationid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Empworklocation" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Empworklocation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_empworklocationid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empworklocationid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Empworklocation" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Empworklocation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="empworklocationid" ColumnName="empworklocationid" DataSourceName="PATA.dbo.EmpWorkLocation" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@empworklocationid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="empworklocationid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="empworklocationid" DataSetColumn="empworklocationid" />
+              <Mapping SourceColumn="Empworklocation" DataSetColumn="Empworklocation" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpJobTitlesTableAdapter" GeneratorDataComponentClassName="EmpJobTitlesTableAdapter" Name="EmpJobTitles" UserDataComponentName="EmpJobTitlesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.EmpJobTitles" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [EmpJobTitles] WHERE (([empjobtitleid] = @Original_empjobtitleid) AND ((@IsNull_EmpJobTitle = 1 AND [EmpJobTitle] IS NULL) OR ([EmpJobTitle] = @Original_EmpJobTitle)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_empjobtitleid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empjobtitleid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpJobTitle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [EmpJobTitles] ([EmpJobTitle]) VALUES (@EmpJobTitle);
+SELECT empjobtitleid, EmpJobTitle FROM EmpJobTitles WHERE (empjobtitleid = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpJobTitle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        EmpJobTitles.*
+FROM            EmpJobTitles</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [EmpJobTitles] SET [EmpJobTitle] = @EmpJobTitle WHERE (([empjobtitleid] = @Original_empjobtitleid) AND ((@IsNull_EmpJobTitle = 1 AND [EmpJobTitle] IS NULL) OR ([EmpJobTitle] = @Original_EmpJobTitle)));
+SELECT empjobtitleid, EmpJobTitle FROM EmpJobTitles WHERE (empjobtitleid = @empjobtitleid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpJobTitle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_empjobtitleid" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empjobtitleid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpJobTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpJobTitle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpJobTitle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="empjobtitleid" ColumnName="empjobtitleid" DataSourceName="PATA.dbo.EmpJobTitles" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@empjobtitleid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="empjobtitleid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="empjobtitleid" DataSetColumn="empjobtitleid" />
+              <Mapping SourceColumn="EmpJobTitle" DataSetColumn="EmpJobTitle" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpTeamTableAdapter" GeneratorDataComponentClassName="EmpTeamTableAdapter" Name="EmpTeam" UserDataComponentName="EmpTeamTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PATAConnectionString (MySettings)" DbObjectName="PATA.dbo.EmpTeam" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [EmpTeam] WHERE (([EmpTeam] = @Original_EmpTeam) AND ((@IsNull_EmpTeamName = 1 AND [EmpTeamName] IS NULL) OR ([EmpTeamName] = @Original_EmpTeamName)) AND ((@IsNull_EmpTeamLeader = 1 AND [EmpTeamLeader] IS NULL) OR ([EmpTeamLeader] = @Original_EmpTeamLeader)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTeam" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeam" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTeamName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpTeamName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTeamName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTeamLeader" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamLeader" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTeamLeader" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamLeader" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [EmpTeam] ([EmpTeamName], [EmpTeamLeader]) VALUES (@EmpTeamName, @EmpTeamLeader);
+SELECT EmpTeam, EmpTeamName, EmpTeamLeader FROM EmpTeam WHERE (EmpTeam = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpTeamName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTeamName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTeamLeader" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamLeader" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        EmpTeam.*
+FROM            EmpTeam</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [EmpTeam] SET [EmpTeamName] = @EmpTeamName, [EmpTeamLeader] = @EmpTeamLeader WHERE (([EmpTeam] = @Original_EmpTeam) AND ((@IsNull_EmpTeamName = 1 AND [EmpTeamName] IS NULL) OR ([EmpTeamName] = @Original_EmpTeamName)) AND ((@IsNull_EmpTeamLeader = 1 AND [EmpTeamLeader] IS NULL) OR ([EmpTeamLeader] = @Original_EmpTeamLeader)));
+SELECT EmpTeam, EmpTeamName, EmpTeamLeader FROM EmpTeam WHERE (EmpTeam = @EmpTeam)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EmpTeamName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTeamName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmpTeamLeader" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamLeader" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTeam" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeam" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTeamName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_EmpTeamName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EmpTeamName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmpTeamLeader" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamLeader" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmpTeamLeader" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmpTeamLeader" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EmpTeam" ColumnName="EmpTeam" DataSourceName="PATA.dbo.EmpTeam" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EmpTeam" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmpTeam" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmpTeam" DataSetColumn="EmpTeam" />
+              <Mapping SourceColumn="EmpTeamName" DataSetColumn="EmpTeamName" />
+              <Mapping SourceColumn="EmpTeamLeader" DataSetColumn="EmpTeamLeader" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDesigners" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DSDesigners" msprop:Generator_UserDSName="DSDesigners">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Employees" msprop:Generator_TableClassName="EmployeesDataTable" msprop:Generator_TableVarName="tableEmployees" msprop:Generator_TablePropName="Employees" msprop:Generator_RowDeletingName="EmployeesRowDeleting" msprop:Generator_RowChangingName="EmployeesRowChanging" msprop:Generator_RowEvHandlerName="EmployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeesRowDeleted" msprop:Generator_UserTableName="Employees" msprop:Generator_RowChangedName="EmployeesRowChanged" msprop:Generator_RowEvArgName="EmployeesRowChangeEvent" msprop:Generator_RowClassName="EmployeesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEmpID" msprop:Generator_ColumnPropNameInRow="EmpID" msprop:Generator_ColumnPropNameInTable="EmpIDColumn" msprop:Generator_UserColumnName="EmpID" type="xs:int" />
+              <xs:element name="EmpFirst" msprop:Generator_ColumnVarNameInTable="columnEmpFirst" msprop:Generator_ColumnPropNameInRow="EmpFirst" msprop:Generator_ColumnPropNameInTable="EmpFirstColumn" msprop:Generator_UserColumnName="EmpFirst">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpLast" msprop:Generator_ColumnVarNameInTable="columnEmpLast" msprop:Generator_ColumnPropNameInRow="EmpLast" msprop:Generator_ColumnPropNameInTable="EmpLastColumn" msprop:Generator_UserColumnName="EmpLast">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpWareID" msprop:Generator_ColumnVarNameInTable="columnEmpWareID" msprop:Generator_ColumnPropNameInRow="EmpWareID" msprop:Generator_ColumnPropNameInTable="EmpWareIDColumn" msprop:Generator_UserColumnName="EmpWareID" type="xs:int" />
+              <xs:element name="EmpTypeID" msprop:Generator_ColumnVarNameInTable="columnEmpTypeID" msprop:Generator_ColumnPropNameInRow="EmpTypeID" msprop:Generator_ColumnPropNameInTable="EmpTypeIDColumn" msprop:Generator_UserColumnName="EmpTypeID" type="xs:int" />
+              <xs:element name="EmpLogin" msprop:Generator_ColumnVarNameInTable="columnEmpLogin" msprop:Generator_ColumnPropNameInRow="EmpLogin" msprop:Generator_ColumnPropNameInTable="EmpLoginColumn" msprop:Generator_UserColumnName="EmpLogin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpNotifyProj" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyProj" msprop:Generator_ColumnPropNameInRow="EmpNotifyProj" msprop:Generator_ColumnPropNameInTable="EmpNotifyProjColumn" msprop:Generator_UserColumnName="EmpNotifyProj" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpNotifyTaskComp" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyTaskComp" msprop:Generator_ColumnPropNameInRow="EmpNotifyTaskComp" msprop:Generator_ColumnPropNameInTable="EmpNotifyTaskCompColumn" msprop:Generator_UserColumnName="EmpNotifyTaskComp" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpNotifyTaskAssn" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyTaskAssn" msprop:Generator_ColumnPropNameInRow="EmpNotifyTaskAssn" msprop:Generator_ColumnPropNameInTable="EmpNotifyTaskAssnColumn" msprop:Generator_UserColumnName="EmpNotifyTaskAssn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpUnitCapacity" msprop:Generator_ColumnVarNameInTable="columnEmpUnitCapacity" msprop:Generator_ColumnPropNameInRow="EmpUnitCapacity" msprop:Generator_ColumnPropNameInTable="EmpUnitCapacityColumn" msprop:Generator_UserColumnName="EmpUnitCapacity" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpTextEmail" msprop:Generator_ColumnVarNameInTable="columnEmpTextEmail" msprop:Generator_ColumnPropNameInRow="EmpTextEmail" msprop:Generator_ColumnPropNameInTable="EmpTextEmailColumn" msprop:Generator_UserColumnName="EmpTextEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpEmail" msprop:Generator_ColumnVarNameInTable="columnEmpEmail" msprop:Generator_ColumnPropNameInRow="EmpEmail" msprop:Generator_ColumnPropNameInTable="EmpEmailColumn" msprop:Generator_UserColumnName="EmpEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpNotifyShopReady" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyShopReady" msprop:Generator_ColumnPropNameInRow="EmpNotifyShopReady" msprop:Generator_ColumnPropNameInTable="EmpNotifyShopReadyColumn" msprop:Generator_UserColumnName="EmpNotifyShopReady" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SalesPartnerID" msprop:Generator_ColumnVarNameInTable="columnSalesPartnerID" msprop:Generator_ColumnPropNameInRow="SalesPartnerID" msprop:Generator_ColumnPropNameInTable="SalesPartnerIDColumn" msprop:Generator_UserColumnName="SalesPartnerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpNotifyProjRequest" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyProjRequest" msprop:Generator_ColumnPropNameInRow="EmpNotifyProjRequest" msprop:Generator_ColumnPropNameInTable="EmpNotifyProjRequestColumn" msprop:Generator_UserColumnName="EmpNotifyProjRequest" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpNotifyAudit" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyAudit" msprop:Generator_ColumnPropNameInRow="EmpNotifyAudit" msprop:Generator_ColumnPropNameInTable="EmpNotifyAuditColumn" msprop:Generator_UserColumnName="EmpNotifyAudit" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpNotifyEnOCreate" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyEnOCreate" msprop:Generator_ColumnPropNameInRow="EmpNotifyEnOCreate" msprop:Generator_ColumnPropNameInTable="EmpNotifyEnOCreateColumn" msprop:Generator_UserColumnName="EmpNotifyEnOCreate" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpNotifyEstComp" msprop:Generator_ColumnVarNameInTable="columnEmpNotifyEstComp" msprop:Generator_ColumnPropNameInRow="EmpNotifyEstComp" msprop:Generator_ColumnPropNameInTable="EmpNotifyEstCompColumn" msprop:Generator_UserColumnName="EmpNotifyEstComp" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmpHourlyRate" msprop:Generator_ColumnVarNameInTable="columnEmpHourlyRate" msprop:Generator_ColumnPropNameInRow="EmpHourlyRate" msprop:Generator_ColumnPropNameInTable="EmpHourlyRateColumn" msprop:Generator_UserColumnName="EmpHourlyRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EmpTimeClockID" msprop:Generator_ColumnVarNameInTable="columnEmpTimeClockID" msprop:Generator_ColumnPropNameInRow="EmpTimeClockID" msprop:Generator_ColumnPropNameInTable="EmpTimeClockIDColumn" msprop:Generator_UserColumnName="EmpTimeClockID" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpBistrackID" msprop:Generator_ColumnVarNameInTable="columnEmpBistrackID" msprop:Generator_ColumnPropNameInRow="EmpBistrackID" msprop:Generator_ColumnPropNameInTable="EmpBistrackIDColumn" msprop:Generator_UserColumnName="EmpBistrackID" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpBistrackSalesID" msprop:Generator_ColumnVarNameInTable="columnEmpBistrackSalesID" msprop:Generator_ColumnPropNameInRow="EmpBistrackSalesID" msprop:Generator_ColumnPropNameInTable="EmpBistrackSalesIDColumn" msprop:Generator_UserColumnName="EmpBistrackSalesID" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpWorkLocation" msprop:Generator_ColumnVarNameInTable="columnEmpWorkLocation" msprop:Generator_ColumnPropNameInRow="EmpWorkLocation" msprop:Generator_ColumnPropNameInTable="EmpWorkLocationColumn" msprop:Generator_UserColumnName="EmpWorkLocation" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpHomeAddress" msprop:Generator_ColumnVarNameInTable="columnEmpHomeAddress" msprop:Generator_ColumnPropNameInRow="EmpHomeAddress" msprop:Generator_ColumnPropNameInTable="EmpHomeAddressColumn" msprop:Generator_UserColumnName="EmpHomeAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpStartDate" msprop:Generator_ColumnVarNameInTable="columnEmpStartDate" msprop:Generator_ColumnPropNameInRow="EmpStartDate" msprop:Generator_ColumnPropNameInTable="EmpStartDateColumn" msprop:Generator_UserColumnName="EmpStartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmpJobTitle" msprop:Generator_ColumnVarNameInTable="columnEmpJobTitle" msprop:Generator_ColumnPropNameInRow="EmpJobTitle" msprop:Generator_ColumnPropNameInTable="EmpJobTitleColumn" msprop:Generator_UserColumnName="EmpJobTitle" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpEndDate" msprop:Generator_ColumnVarNameInTable="columnEmpEndDate" msprop:Generator_ColumnPropNameInRow="EmpEndDate" msprop:Generator_ColumnPropNameInTable="EmpEndDateColumn" msprop:Generator_UserColumnName="EmpEndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmpFullName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmpFullName" msprop:Generator_ColumnPropNameInRow="EmpFullName" msprop:Generator_ColumnPropNameInTable="EmpFullNameColumn" msprop:Generator_UserColumnName="EmpFullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpTeamID" msprop:Generator_ColumnVarNameInTable="columnEmpTeamID" msprop:Generator_ColumnPropNameInRow="EmpTeamID" msprop:Generator_ColumnPropNameInTable="EmpTeamIDColumn" msprop:Generator_UserColumnName="EmpTeamID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmpRates" msprop:Generator_TableClassName="EmpRatesDataTable" msprop:Generator_TableVarName="tableEmpRates" msprop:Generator_TablePropName="EmpRates" msprop:Generator_RowDeletingName="EmpRatesRowDeleting" msprop:Generator_RowChangingName="EmpRatesRowChanging" msprop:Generator_RowEvHandlerName="EmpRatesRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpRatesRowDeleted" msprop:Generator_UserTableName="EmpRates" msprop:Generator_RowChangedName="EmpRatesRowChanged" msprop:Generator_RowEvArgName="EmpRatesRowChangeEvent" msprop:Generator_RowClassName="EmpRatesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpPayRateid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEmpPayRateid" msprop:Generator_ColumnPropNameInRow="EmpPayRateid" msprop:Generator_ColumnPropNameInTable="EmpPayRateidColumn" msprop:Generator_UserColumnName="EmpPayRateid" type="xs:int" />
+              <xs:element name="EmpID" msprop:Generator_ColumnVarNameInTable="columnEmpID" msprop:Generator_ColumnPropNameInRow="EmpID" msprop:Generator_ColumnPropNameInTable="EmpIDColumn" msprop:Generator_UserColumnName="EmpID" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpPayRate" msprop:Generator_ColumnVarNameInTable="columnEmpPayRate" msprop:Generator_ColumnPropNameInRow="EmpPayRate" msprop:Generator_ColumnPropNameInTable="EmpPayRateColumn" msprop:Generator_UserColumnName="EmpPayRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Effectivedate" msprop:Generator_ColumnVarNameInTable="columnEffectivedate" msprop:Generator_ColumnPropNameInRow="Effectivedate" msprop:Generator_ColumnPropNameInTable="EffectivedateColumn" msprop:Generator_UserColumnName="Effectivedate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EffectiveEndDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveEndDate" msprop:Generator_ColumnPropNameInRow="EffectiveEndDate" msprop:Generator_ColumnPropNameInTable="EffectiveEndDateColumn" msprop:Generator_UserColumnName="EffectiveEndDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DesignMetrics" msprop:Generator_TableClassName="DesignMetricsDataTable" msprop:Generator_TableVarName="tableDesignMetrics" msprop:Generator_TablePropName="DesignMetrics" msprop:Generator_RowDeletingName="DesignMetricsRowDeleting" msprop:Generator_RowChangingName="DesignMetricsRowChanging" msprop:Generator_RowEvHandlerName="DesignMetricsRowChangeEventHandler" msprop:Generator_RowDeletedName="DesignMetricsRowDeleted" msprop:Generator_UserTableName="DesignMetrics" msprop:Generator_RowChangedName="DesignMetricsRowChanged" msprop:Generator_RowEvArgName="DesignMetricsRowChangeEvent" msprop:Generator_RowClassName="DesignMetricsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DesignMetricsID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDesignMetricsID" msprop:Generator_ColumnPropNameInRow="DesignMetricsID" msprop:Generator_ColumnPropNameInTable="DesignMetricsIDColumn" msprop:Generator_UserColumnName="DesignMetricsID" type="xs:int" />
+              <xs:element name="EMPID" msprop:Generator_ColumnVarNameInTable="columnEMPID" msprop:Generator_ColumnPropNameInRow="EMPID" msprop:Generator_ColumnPropNameInTable="EMPIDColumn" msprop:Generator_UserColumnName="EMPID" type="xs:int" minOccurs="0" />
+              <xs:element name="HoursWorked" msprop:Generator_ColumnVarNameInTable="columnHoursWorked" msprop:Generator_ColumnPropNameInRow="HoursWorked" msprop:Generator_ColumnPropNameInTable="HoursWorkedColumn" msprop:Generator_UserColumnName="HoursWorked" type="xs:decimal" default="0.001" />
+              <xs:element name="WeekYear" msprop:Generator_ColumnVarNameInTable="columnWeekYear" msprop:Generator_ColumnPropNameInRow="WeekYear" msprop:Generator_ColumnPropNameInTable="WeekYearColumn" msprop:Generator_UserColumnName="WeekYear" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="21" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToShopBDFT" msprop:Generator_ColumnVarNameInTable="columnToShopBDFT" msprop:Generator_ColumnPropNameInRow="ToShopBDFT" msprop:Generator_ColumnPropNameInTable="ToShopBDFTColumn" msprop:Generator_UserColumnName="ToShopBDFT" type="xs:int" default="0" />
+              <xs:element name="TotalBDFT" msprop:Generator_ColumnVarNameInTable="columnTotalBDFT" msprop:Generator_ColumnPropNameInRow="TotalBDFT" msprop:Generator_ColumnPropNameInTable="TotalBDFTColumn" msprop:Generator_UserColumnName="TotalBDFT" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="EstBDFT" msprop:Generator_ColumnVarNameInTable="columnEstBDFT" msprop:Generator_ColumnPropNameInRow="EstBDFT" msprop:Generator_ColumnPropNameInTable="EstBDFTColumn" msprop:Generator_UserColumnName="EstBDFT" type="xs:int" default="0" />
+              <xs:element name="EWPLF" msprop:Generator_ColumnVarNameInTable="columnEWPLF" msprop:Generator_ColumnPropNameInRow="EWPLF" msprop:Generator_ColumnPropNameInTable="EWPLFColumn" msprop:Generator_UserColumnName="EWPLF" type="xs:int" default="0" />
+              <xs:element name="LooseSQFT" msprop:Generator_ColumnVarNameInTable="columnLooseSQFT" msprop:Generator_ColumnPropNameInRow="LooseSQFT" msprop:Generator_ColumnPropNameInTable="LooseSQFTColumn" msprop:Generator_UserColumnName="LooseSQFT" type="xs:int" default="0" />
+              <xs:element name="DesignEnoCost" msprop:Generator_ColumnVarNameInTable="columnDesignEnoCost" msprop:Generator_ColumnPropNameInRow="DesignEnoCost" msprop:Generator_ColumnPropNameInTable="DesignEnoCostColumn" msprop:Generator_UserColumnName="DesignEnoCost" type="xs:decimal" default="0" />
+              <xs:element name="DesignEnoNBR" msprop:Generator_ColumnVarNameInTable="columnDesignEnoNBR" msprop:Generator_ColumnPropNameInRow="DesignEnoNBR" msprop:Generator_ColumnPropNameInTable="DesignEnoNBRColumn" msprop:Generator_UserColumnName="DesignEnoNBR" type="xs:int" default="0" />
+              <xs:element name="yearsort" msprop:Generator_ColumnVarNameInTable="columnyearsort" msprop:Generator_ColumnPropNameInRow="yearsort" msprop:Generator_ColumnPropNameInTable="yearsortColumn" msprop:Generator_UserColumnName="yearsort" type="xs:int" minOccurs="0" />
+              <xs:element name="weeksort" msprop:Generator_ColumnVarNameInTable="columnweeksort" msprop:Generator_ColumnPropNameInRow="weeksort" msprop:Generator_ColumnPropNameInTable="weeksortColumn" msprop:Generator_UserColumnName="weeksort" type="xs:int" minOccurs="0" />
+              <xs:element name="PayRate" msprop:Generator_ColumnVarNameInTable="columnPayRate" msprop:Generator_ColumnPropNameInRow="PayRate" msprop:Generator_ColumnPropNameInTable="PayRateColumn" msprop:Generator_UserColumnName="PayRate" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmployeeType" msprop:Generator_TableClassName="EmployeeTypeDataTable" msprop:Generator_TableVarName="tableEmployeeType" msprop:Generator_TablePropName="EmployeeType" msprop:Generator_RowDeletingName="EmployeeTypeRowDeleting" msprop:Generator_RowChangingName="EmployeeTypeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeTypeRowDeleted" msprop:Generator_UserTableName="EmployeeType" msprop:Generator_RowChangedName="EmployeeTypeRowChanged" msprop:Generator_RowEvArgName="EmployeeTypeRowChangeEvent" msprop:Generator_RowClassName="EmployeeTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEmpTypeID" msprop:Generator_ColumnPropNameInRow="EmpTypeID" msprop:Generator_ColumnPropNameInTable="EmpTypeIDColumn" msprop:Generator_UserColumnName="EmpTypeID" type="xs:int" />
+              <xs:element name="EmpTypeName" msprop:Generator_ColumnVarNameInTable="columnEmpTypeName" msprop:Generator_ColumnPropNameInRow="EmpTypeName" msprop:Generator_ColumnPropNameInTable="EmpTypeNameColumn" msprop:Generator_UserColumnName="EmpTypeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Warehouse" msprop:Generator_TableClassName="WarehouseDataTable" msprop:Generator_TableVarName="tableWarehouse" msprop:Generator_TablePropName="Warehouse" msprop:Generator_RowDeletingName="WarehouseRowDeleting" msprop:Generator_RowChangingName="WarehouseRowChanging" msprop:Generator_RowEvHandlerName="WarehouseRowChangeEventHandler" msprop:Generator_RowDeletedName="WarehouseRowDeleted" msprop:Generator_UserTableName="Warehouse" msprop:Generator_RowChangedName="WarehouseRowChanged" msprop:Generator_RowEvArgName="WarehouseRowChangeEvent" msprop:Generator_RowClassName="WarehouseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WarehouseID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnWarehouseID" msprop:Generator_ColumnPropNameInRow="WarehouseID" msprop:Generator_ColumnPropNameInTable="WarehouseIDColumn" msprop:Generator_UserColumnName="WarehouseID" type="xs:int" />
+              <xs:element name="WarehouseName" msprop:Generator_ColumnVarNameInTable="columnWarehouseName" msprop:Generator_ColumnPropNameInRow="WarehouseName" msprop:Generator_ColumnPropNameInTable="WarehouseNameColumn" msprop:Generator_UserColumnName="WarehouseName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="YearlyDesignMetrics" msprop:Generator_TableClassName="YearlyDesignMetricsDataTable" msprop:Generator_TableVarName="tableYearlyDesignMetrics" msprop:Generator_TablePropName="YearlyDesignMetrics" msprop:Generator_RowDeletingName="YearlyDesignMetricsRowDeleting" msprop:Generator_RowChangingName="YearlyDesignMetricsRowChanging" msprop:Generator_RowEvHandlerName="YearlyDesignMetricsRowChangeEventHandler" msprop:Generator_RowDeletedName="YearlyDesignMetricsRowDeleted" msprop:Generator_UserTableName="YearlyDesignMetrics" msprop:Generator_RowChangedName="YearlyDesignMetricsRowChanged" msprop:Generator_RowEvArgName="YearlyDesignMetricsRowChangeEvent" msprop:Generator_RowClassName="YearlyDesignMetricsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalHours" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalHours" msprop:Generator_ColumnPropNameInRow="TotalHours" msprop:Generator_ColumnPropNameInTable="TotalHoursColumn" msprop:Generator_UserColumnName="TotalHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalToShopBDFT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalToShopBDFT" msprop:Generator_ColumnPropNameInRow="TotalToShopBDFT" msprop:Generator_ColumnPropNameInTable="TotalToShopBDFTColumn" msprop:Generator_UserColumnName="TotalToShopBDFT" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalDesignBDFT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalDesignBDFT" msprop:Generator_ColumnPropNameInRow="TotalDesignBDFT" msprop:Generator_ColumnPropNameInTable="TotalDesignBDFTColumn" msprop:Generator_UserColumnName="TotalDesignBDFT" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEstBDFT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalEstBDFT" msprop:Generator_ColumnPropNameInRow="TotalEstBDFT" msprop:Generator_ColumnPropNameInTable="TotalEstBDFTColumn" msprop:Generator_UserColumnName="TotalEstBDFT" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEWPLF" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalEWPLF" msprop:Generator_ColumnPropNameInRow="TotalEWPLF" msprop:Generator_ColumnPropNameInTable="TotalEWPLFColumn" msprop:Generator_UserColumnName="TotalEWPLF" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalSQFT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalSQFT" msprop:Generator_ColumnPropNameInRow="TotalSQFT" msprop:Generator_ColumnPropNameInTable="TotalSQFTColumn" msprop:Generator_UserColumnName="TotalSQFT" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEnOCost" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalEnOCost" msprop:Generator_ColumnPropNameInRow="TotalEnOCost" msprop:Generator_ColumnPropNameInTable="TotalEnOCostColumn" msprop:Generator_UserColumnName="TotalEnOCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalEnOs" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalEnOs" msprop:Generator_ColumnPropNameInRow="TotalEnOs" msprop:Generator_ColumnPropNameInTable="TotalEnOsColumn" msprop:Generator_UserColumnName="TotalEnOs" type="xs:int" minOccurs="0" />
+              <xs:element name="yearsort" msprop:Generator_ColumnVarNameInTable="columnyearsort" msprop:Generator_ColumnPropNameInRow="yearsort" msprop:Generator_ColumnPropNameInTable="yearsortColumn" msprop:Generator_UserColumnName="yearsort" type="xs:int" minOccurs="0" />
+              <xs:element name="EMPID" msprop:Generator_ColumnVarNameInTable="columnEMPID" msprop:Generator_ColumnPropNameInRow="EMPID" msprop:Generator_ColumnPropNameInTable="EMPIDColumn" msprop:Generator_UserColumnName="EMPID" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalBDFTperDH" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalBDFTperDH" msprop:Generator_ColumnPropNameInRow="TotalBDFTperDH" msprop:Generator_ColumnPropNameInTable="TotalBDFTperDHColumn" msprop:Generator_UserColumnName="TotalBDFTperDH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ToShopBDFTDH" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnToShopBDFTDH" msprop:Generator_ColumnPropNameInRow="ToShopBDFTDH" msprop:Generator_ColumnPropNameInTable="ToShopBDFTDHColumn" msprop:Generator_UserColumnName="ToShopBDFTDH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AccRate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAccRate" msprop:Generator_ColumnPropNameInRow="AccRate" msprop:Generator_ColumnPropNameInTable="AccRateColumn" msprop:Generator_UserColumnName="AccRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EstBDFTperDH" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEstBDFTperDH" msprop:Generator_ColumnPropNameInRow="EstBDFTperDH" msprop:Generator_ColumnPropNameInTable="EstBDFTperDHColumn" msprop:Generator_UserColumnName="EstBDFTperDH" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmpWorkLocation" msprop:Generator_TableClassName="EmpWorkLocationDataTable" msprop:Generator_TableVarName="tableEmpWorkLocation" msprop:Generator_RowChangedName="EmpWorkLocationRowChanged" msprop:Generator_TablePropName="EmpWorkLocation" msprop:Generator_RowDeletingName="EmpWorkLocationRowDeleting" msprop:Generator_RowChangingName="EmpWorkLocationRowChanging" msprop:Generator_RowEvHandlerName="EmpWorkLocationRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpWorkLocationRowDeleted" msprop:Generator_RowClassName="EmpWorkLocationRow" msprop:Generator_UserTableName="EmpWorkLocation" msprop:Generator_RowEvArgName="EmpWorkLocationRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empworklocationid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnempworklocationid" msprop:Generator_ColumnPropNameInRow="empworklocationid" msprop:Generator_ColumnPropNameInTable="empworklocationidColumn" msprop:Generator_UserColumnName="empworklocationid" type="xs:int" />
+              <xs:element name="Empworklocation" msprop:Generator_ColumnVarNameInTable="columnEmpworklocation" msprop:Generator_ColumnPropNameInRow="Empworklocation" msprop:Generator_ColumnPropNameInTable="EmpworklocationColumn" msprop:Generator_UserColumnName="Empworklocation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmpJobTitles" msprop:Generator_TableClassName="EmpJobTitlesDataTable" msprop:Generator_TableVarName="tableEmpJobTitles" msprop:Generator_RowChangedName="EmpJobTitlesRowChanged" msprop:Generator_TablePropName="EmpJobTitles" msprop:Generator_RowDeletingName="EmpJobTitlesRowDeleting" msprop:Generator_RowChangingName="EmpJobTitlesRowChanging" msprop:Generator_RowEvHandlerName="EmpJobTitlesRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpJobTitlesRowDeleted" msprop:Generator_RowClassName="EmpJobTitlesRow" msprop:Generator_UserTableName="EmpJobTitles" msprop:Generator_RowEvArgName="EmpJobTitlesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empjobtitleid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnempjobtitleid" msprop:Generator_ColumnPropNameInRow="empjobtitleid" msprop:Generator_ColumnPropNameInTable="empjobtitleidColumn" msprop:Generator_UserColumnName="empjobtitleid" type="xs:int" />
+              <xs:element name="EmpJobTitle" msprop:Generator_ColumnVarNameInTable="columnEmpJobTitle" msprop:Generator_ColumnPropNameInRow="EmpJobTitle" msprop:Generator_ColumnPropNameInTable="EmpJobTitleColumn" msprop:Generator_UserColumnName="EmpJobTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmpTeam" msprop:Generator_TableClassName="EmpTeamDataTable" msprop:Generator_TableVarName="tableEmpTeam" msprop:Generator_RowChangedName="EmpTeamRowChanged" msprop:Generator_TablePropName="EmpTeam" msprop:Generator_RowDeletingName="EmpTeamRowDeleting" msprop:Generator_RowChangingName="EmpTeamRowChanging" msprop:Generator_RowEvHandlerName="EmpTeamRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpTeamRowDeleted" msprop:Generator_RowClassName="EmpTeamRow" msprop:Generator_UserTableName="EmpTeam" msprop:Generator_RowEvArgName="EmpTeamRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpTeam" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEmpTeam" msprop:Generator_ColumnPropNameInRow="EmpTeam" msprop:Generator_ColumnPropNameInTable="EmpTeamColumn" msprop:Generator_UserColumnName="EmpTeam" type="xs:int" />
+              <xs:element name="EmpTeamName" msprop:Generator_ColumnVarNameInTable="columnEmpTeamName" msprop:Generator_ColumnPropNameInRow="EmpTeamName" msprop:Generator_ColumnPropNameInTable="EmpTeamNameColumn" msprop:Generator_UserColumnName="EmpTeamName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpTeamLeader" msprop:Generator_ColumnVarNameInTable="columnEmpTeamLeader" msprop:Generator_ColumnPropNameInRow="EmpTeamLeader" msprop:Generator_ColumnPropNameInTable="EmpTeamLeaderColumn" msprop:Generator_UserColumnName="EmpTeamLeader" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Employees" />
+      <xs:field xpath="mstns:EmpID" />
+    </xs:unique>
+    <xs:unique name="EmpRates_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmpRates" />
+      <xs:field xpath="mstns:EmpPayRateid" />
+    </xs:unique>
+    <xs:unique name="DesignMetrics_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DesignMetrics" />
+      <xs:field xpath="mstns:DesignMetricsID" />
+    </xs:unique>
+    <xs:unique name="EmployeeType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmployeeType" />
+      <xs:field xpath="mstns:EmpTypeID" />
+    </xs:unique>
+    <xs:unique name="Warehouse_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Warehouse" />
+      <xs:field xpath="mstns:WarehouseID" />
+    </xs:unique>
+    <xs:unique name="EmpWorkLocation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmpWorkLocation" />
+      <xs:field xpath="mstns:empworklocationid" />
+    </xs:unique>
+    <xs:unique name="EmpJobTitles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmpJobTitles" />
+      <xs:field xpath="mstns:empjobtitleid" />
+    </xs:unique>
+    <xs:unique name="EmpTeam_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmpTeam" />
+      <xs:field xpath="mstns:EmpTeam" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DesignMetrics_Employees" msdata:parent="Employees" msdata:child="DesignMetrics" msdata:parentkey="EmpID" msdata:childkey="EMPID" msprop:Generator_UserChildTable="DesignMetrics" msprop:Generator_ChildPropName="GetDesignMetricsRows" msprop:Generator_UserRelationName="FK_DesignMetrics_Employees" msprop:Generator_ParentPropName="EmployeesRow" msprop:Generator_RelationVarName="relationFK_DesignMetrics_Employees" msprop:Generator_UserParentTable="Employees" />
+      <msdata:Relationship name="FK_Employees_EmployeeType" msdata:parent="EmployeeType" msdata:child="Employees" msdata:parentkey="EmpTypeID" msdata:childkey="EmpTypeID" msprop:Generator_UserChildTable="Employees" msprop:Generator_ChildPropName="GetEmployeesRows" msprop:Generator_UserRelationName="FK_Employees_EmployeeType" msprop:Generator_RelationVarName="relationFK_Employees_EmployeeType" msprop:Generator_UserParentTable="EmployeeType" msprop:Generator_ParentPropName="EmployeeTypeRow" />
+      <msdata:Relationship name="FK_Employees_Warehouse" msdata:parent="Warehouse" msdata:child="Employees" msdata:parentkey="WarehouseID" msdata:childkey="EmpWareID" msprop:Generator_UserChildTable="Employees" msprop:Generator_ChildPropName="GetEmployeesRows" msprop:Generator_UserRelationName="FK_Employees_Warehouse" msprop:Generator_RelationVarName="relationFK_Employees_Warehouse" msprop:Generator_UserParentTable="Warehouse" msprop:Generator_ParentPropName="WarehouseRow" />
+      <msdata:Relationship name="FK_EmpRates_Employees" msdata:parent="Employees" msdata:child="EmpRates" msdata:parentkey="EmpID" msdata:childkey="EmpID" msprop:Generator_UserChildTable="EmpRates" msprop:Generator_ChildPropName="GetEmpRatesRows" msprop:Generator_UserRelationName="FK_EmpRates_Employees" msprop:Generator_ParentPropName="EmployeesRow" msprop:Generator_RelationVarName="relationFK_EmpRates_Employees" msprop:Generator_UserParentTable="Employees" />
+      <msdata:Relationship name="FK_YearlyMetrics_Employees" msdata:parent="Employees" msdata:child="YearlyDesignMetrics" msdata:parentkey="EmpID" msdata:childkey="EMPID" msprop:Generator_UserChildTable="YearlyDesignMetrics" msprop:Generator_ChildPropName="GetYearlyDesignMetricsRows" msprop:Generator_UserRelationName="FK_YearlyMetrics_Employees" msprop:Generator_ParentPropName="EmployeesRow" msprop:Generator_RelationVarName="relationFK_YearlyMetrics_Employees" msprop:Generator_UserParentTable="Employees" />
+      <msdata:Relationship name="FK_Employees_EmpWorkLocation" msdata:parent="EmpWorkLocation" msdata:child="Employees" msdata:parentkey="empworklocationid" msdata:childkey="EmpWorkLocation" msprop:Generator_UserChildTable="Employees" msprop:Generator_ChildPropName="GetEmployeesRows" msprop:Generator_UserRelationName="FK_Employees_EmpWorkLocation" msprop:Generator_ParentPropName="EmpWorkLocationRow" msprop:Generator_RelationVarName="relationFK_Employees_EmpWorkLocation" msprop:Generator_UserParentTable="EmpWorkLocation" />
+      <msdata:Relationship name="FK_Employees_EmpJobTitles" msdata:parent="EmpJobTitles" msdata:child="Employees" msdata:parentkey="empjobtitleid" msdata:childkey="EmpJobTitle" msprop:Generator_UserChildTable="Employees" msprop:Generator_ChildPropName="GetEmployeesRows" msprop:Generator_UserRelationName="FK_Employees_EmpJobTitles" msprop:Generator_ParentPropName="EmpJobTitlesRow" msprop:Generator_RelationVarName="relationFK_Employees_EmpJobTitles" msprop:Generator_UserParentTable="EmpJobTitles" />
+      <msdata:Relationship name="FK_Employees_EmpTeam" msdata:parent="EmpTeam" msdata:child="Employees" msdata:parentkey="EmpTeam" msdata:childkey="EmpTeamID" msprop:Generator_UserChildTable="Employees" msprop:Generator_ChildPropName="GetEmployeesRows" msprop:Generator_UserRelationName="FK_Employees_EmpTeam" msprop:Generator_ParentPropName="EmpTeamRow" msprop:Generator_RelationVarName="relationFK_Employees_EmpTeam" msprop:Generator_UserParentTable="EmpTeam" />
+      <msdata:Relationship name="FK_EmpTeam_Employees" msdata:parent="Employees" msdata:child="EmpTeam" msdata:parentkey="EmpID" msdata:childkey="EmpTeamLeader" msprop:Generator_UserChildTable="EmpTeam" msprop:Generator_ChildPropName="GetEmpTeamRows" msprop:Generator_UserRelationName="FK_EmpTeam_Employees" msprop:Generator_RelationVarName="relationFK_EmpTeam_Employees" msprop:Generator_UserParentTable="Employees" msprop:Generator_ParentPropName="EmployeesRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
